@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1189451245373429771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8710621861251129323}
+  - component: {fileID: 757642655107911648}
+  m_Layer: 0
+  m_Name: PanoramaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8710621861251129323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189451245373429771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1227373, y: 1.392084, z: 0.45077875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757642655107911648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189451245373429771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304b28f0bce58424c86279789e145047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panoramaSphere: {fileID: 0}
+  arrowPrefab: {fileID: 3036314688752735778, guid: f305144456bc15642806067dd01989c0, type: 3}
+  arrowParent: {fileID: 8786378702953721610, guid: 8aefc9bfbf3ec8a45a9056359eba859c, type: 3}
+  infoPrefab: {fileID: 7125380784729742889, guid: 470cca90cca5a74419828ed96947dcb8, type: 3}
+  locations:
+  - locationId: locationA
+    panoramaMaterial: {fileID: 2100000, guid: 80ba9cf460d555d4bbde8aefdf80ac93, type: 2}
+    directions:
+    - direction: front
+      targetLocationId: locationB
+    infoPoints:
+    - position: {x: -0.666, y: 0.6, z: 0.76}
+      message: This is an information point
+  - locationId: locationB
+    panoramaMaterial: {fileID: 2100000, guid: 2f56a50751c8dae488f45c0285a4667d, type: 2}
+    directions:
+    - direction: back
+      targetLocationId: locationA
+    infoPoints:
+    - position: {x: 0.94, y: 2.78, z: 1.68}
+      message: This is an information point
+  startLocationId: locationA

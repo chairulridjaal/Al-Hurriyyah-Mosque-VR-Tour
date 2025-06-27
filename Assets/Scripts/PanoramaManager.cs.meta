@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 304b28f0bce58424c86279789e145047
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - panoramaSphere: {fileID: 919132149155446097, guid: 4bfed9b9122c695489ed40d80334723e, type: 3}
+  - arrowPrefab: {fileID: 919132149155446097, guid: e19a24600ed158a45936dafa52142102, type: 3}
+  - arrowParent: {fileID: 8786378702953721610, guid: 4130399a3c99d6b44bc2dc607c89ef7c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
